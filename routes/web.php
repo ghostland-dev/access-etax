@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Http\Controllers\PipelineController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +23,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/app/v1/data/utilisateurs', function () {
 
     $Utilisateurs =  User::All();
@@ -29,3 +30,31 @@ Route::get('/app/v1/data/utilisateurs', function () {
 
     return view('pages.utilisateurs.liste', compact('Utilisateurs'));
 });
+
+// Routes de pipeline
+
+Route::controller(PipelineController::class)->group(function () {
+    Route::get('/app/v1/simulateur/etap/eligibilites', 'eligibilites');
+    Route::get('/app/v1/simulateur/etap/contrat',      'envoieContrat');
+    Route::get('/app/v1/simulateur/etap/validation',   'validationeligibilite');
+    Route::get('/app/v1/simulateur/etap/confirmation', 'confirmationContrat');
+    Route::get('/app/v1/simulateur/etap/statut-dossier',   'DossierIcomplet');
+    Route::get('/app/v1/simulateur/etap/montage',   'ConsitutionDossier');
+    Route::get('/app/v1/simulateur/etap/bureau-etude',   'TansferDouanes');
+    Route::get('/app/v1/simulateur/etap/reception',   'AccuseReception');
+    Route::get('/app/v1/simulateur/etap/remboursement',   'Remboursement');
+    Route::get('/app/v1/simulateur/etap/facturation',   'facurationPresta');
+    Route::get('/app/v1/simulateur/etap/finalisation',   'DemandeFournisseur');
+     
+});
+
+// Routes des pages de base
+
+Route::controller(HomeController::class)->group(function () {
+
+    Route::get('/home', 'index')->name('home');
+
+
+});
+
+ 

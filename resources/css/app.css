@@ -5,3 +5,27 @@
 body * {
     font-family:Comfortaa !important;
 }
+
+
+
+/*  Images */
+
+.logo-login{
+
+        height: 3em !important;
+    background-color: #eeeff1b8;
+    border-radius: 50%;
+    box-shadow: #cacedba3 0 0 22px 3px;
+}
+
+.app-logo{
+    height: 4em !important;
+}
+
+ /* Buttons  */
+
+ .bg-lime-500, .bg-lime-400{
+
+
+    background-color: #b4c348 !important;
+ }

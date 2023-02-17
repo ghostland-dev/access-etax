@@ -20,7 +20,7 @@
     <div id="app">
 
           @include('layouts.composants.header')
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
          @include('layouts.composants.footer')

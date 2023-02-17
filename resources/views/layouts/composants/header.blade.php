@@ -1,8 +1,8 @@
-<nav class="bg-success border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-500">
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
+<nav class="bg-gray-100 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-500">
+    <div class="container-fluid flex flex-wrap items-center justify-between mx-auto px-4">
         <a href="https://access-etax.com/" class="flex items-center">
-            <img src="{{ asset('./Icons/E-Tax-icon.svg') }}" class="h-10 mr-3 sm:h-10" alt="Access E-Tax" />
-            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">E-Tax</span>
+            <img  class="h-10 app-logo " src="{{ asset('./logo/E-Tax-logo.svg') }}" class="h-10 mr-3 sm:h-10" alt="Access E-Tax" />
+           
         </a>
 
         <div class="flex items-center md:order-2">
@@ -10,13 +10,13 @@
             @guest
                 @if(Route::has('login'))
 
-                <a class="text-white bg-lime-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mx-3"
+                <a class="text-white bg-lime-500 hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-lime-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  md:mr-0 dark:bg-lime-600 dark:hover:bg-lime-700 dark:focus:ring-lime-800 mx-3"
                     href="{{ route('login') }}">{{ __('connexion') }}</a>
 
                 @endif
 
                 @if(Route::has('register'))
-                <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mx-3"
+                <a class="text-white bg-gray-700 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  md:mr-0 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 mx-3"
                     href="{{ route('register') }}">{{ __('inscription') }}</a>
                 @endif
             @else
