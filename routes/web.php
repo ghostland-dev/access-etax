@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,14 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/app/v1/data/utilisateurs', function () {
+
+    $Utilisateurs =  User::All();
+   // dd( $Utilisateurs);
+
+    return view('pages.utilisateurs.liste', compact('Utilisateurs'));
+});
