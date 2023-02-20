@@ -1,10 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
 use App\Models\User;
-use App\Http\Controllers\PipelineController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PipelineController;
+use App\Http\Controllers\UtilisateurController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,17 +24,29 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/app/v1/data/utilisateurs', function () {
 
-    $Utilisateurs =  User::All();
-   // dd( $Utilisateurs);
+Route::controller(UtilisateurController::class)->group(function () {
 
-    return view('pages.utilisateurs.liste', compact('Utilisateurs'));
+    // Fetcing users globally and filtred
+    Route::get('/app/v1/data/utilisateurs' ,'index')->name('utilisateurs.liste');
+    Route::get('/app/v1/data/utilisateur/{id}' ,'show')->name('utilisateur.show');
+
+    // Creating  new user
+    Route::get('/app/v1/data/utilisateur/creer' ,'create')->name('utilisateur.create');
+    Route::post('/app/v1/data/utilisateur/sauvgarder' ,'create')->name('utilisateur.store');
+
+    // Updating user details
+    Route::get('/app/v1/data/{id}/utilisateur' ,'edit')->name('utilisateur.edit');
+    Route::put('/app/v1/data/{id}/utilisateur' ,'update')->name('utilisateur.update');
+
+    Route::get('/app/v1/data/{id}/utilisateurs' ,'destroy')->name('utilisateur.delete');
+
 });
 
 // Routes de pipeline
 
 Route::controller(PipelineController::class)->group(function () {
+
     Route::get('/app/v1/simulateur/etap/eligibilites', 'eligibilites');
     Route::get('/app/v1/simulateur/etap/contrat',      'envoieContrat');
     Route::get('/app/v1/simulateur/etap/validation',   'validationeligibilite');
@@ -45,7 +58,7 @@ Route::controller(PipelineController::class)->group(function () {
     Route::get('/app/v1/simulateur/etap/remboursement',   'Remboursement');
     Route::get('/app/v1/simulateur/etap/facturation',   'facurationPresta');
     Route::get('/app/v1/simulateur/etap/finalisation',   'DemandeFournisseur');
-     
+
 });
 
 // Routes des pages de base

@@ -2,7 +2,7 @@
 
 @section('content')
 
- 
+
       <section class="bg-white dark:bg-gray-900">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
@@ -13,12 +13,12 @@
                     <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </a>
                 <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                    En savoir un peu plus 
-                </a> 
+                    En savoir un peu plus
+                </a>
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
                 <img src="https://example.com/images/undraw_discount_d-4-bd.svg" alt="mockup">
-            </div>                
+            </div>
         </div>
     </section>
 
@@ -27,26 +27,26 @@
             <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"></h2>
             <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
                 <a href="#" class="flex justify-center items-center">
-                       <img src="https://example.com/assets/Media/Access-E-client-logo.svg">                       
+                       <img src="https://example.com/assets/Media/Access-E-client-logo.svg">
                 </a>
                 <a href="#" class="flex justify-center items-center">
-                    
+
                     <img src="https://example.com/assets/Media/Access-E-Target-logo.svg">
 
-                    </svg>                                               
+                    </svg>
                 </a>
                 <a href="#" class="flex justify-center items-center">
-                     <img src="https://example.com/assets/Media/Access-E-CMVP-logo.svg">                                                               
+                     <img src="https://example.com/assets/Media/Access-E-CMVP-logo.svg">
                 </a>
-    
+
                 <a href="#" class="flex justify-center items-center">
-                      <img src="https://example.com/assets/Media/Access-E-market-logo.svg">                                                                                    
-                </a>
-                <a href="#" class="flex justify-center items-center">
-                   <img src="https://example.com/assets/Media/Access-E-Omega-logo.svg">                                                                                   
+                      <img src="https://example.com/assets/Media/Access-E-market-logo.svg">
                 </a>
                 <a href="#" class="flex justify-center items-center">
-                      <img src="https://example.com/assets/Media/Access-E-client-logo.svg">                                                                                
+                   <img src="https://example.com/assets/Media/Access-E-Omega-logo.svg">
+                </a>
+                <a href="#" class="flex justify-center items-center">
+                      <img src="https://example.com/assets/Media/Access-E-client-logo.svg">
                 </a>
             </div>
         </div>
@@ -55,8 +55,8 @@
     <section class="bg-gray-50 dark:bg-gray-800">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class="max-w-screen-md mb-8 lg:mb-16">
-                <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
-                <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"> Pour une entreprise plus saine </h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">faites vous rembourser vos taxes energitiques grace à notre </p>
             </div>
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <div>
@@ -75,7 +75,7 @@
                 </div>
                 <div>
                     <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900">
-                        <svg class="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>                    
+                        <svg class="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Business Automation</h3>
                     <p class="text-gray-500 dark:text-gray-400">Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started.</p>
